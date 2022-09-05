@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <nav class="header__content-navbar header__nabvar">
+          <a href="../index.html" class="header__content-logo">
+            <img
+              src="../assets/images/logo_header.png"
+              alt="logo"
+              height="30"
+            />
+          </a>
+          <ul class="header__nabvar-list">
+            <a href="../index.html" class="header__navbar-link">
+              <li>Inicio</li>
+            </a>
+            <a href="./artistas.html" class="header__navbar-link">
+              <li>Artistas</li>
+            </a>
+            <a href="./generos.html" class="header__navbar-link">
+              <li>Generos</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="contacto">
+      <section class="contacto__content">
+        <h2 class="contacto__content-title">
+          ¿Tienes dudas, sugerencias o nos quieres contar algo?
+        </h2>
+        <form
+          action="send.php"
+          method="get"
+          enctype="multipart/form-data"
+          class="contacto__form"
+        >
+          <div class="input-name contacto__form-input">
+            <label for="name" class="contacto__form-title">Nombre</label>
+            <input type="text" placeholder="Ingresa el nombre" id="name" />
+          </div>
+          <div class="input-lastname contacto__form-input">
+            <label for="apellido" class="contacto__form-title">Apellido</label>
+            <input
+              type="text"
+              placeholder="Ingresa el apellido"
+              id="apellido"
+            />
+          </div>
+          <div class="input-email contacto__form-input">
+            <label for="apellido" class="contacto__form-title">Email</label>
+            <input type="email" placeholder="Ingresa el email" id="apellido" />
+          </div>
+          <div class="input-email contacto__form-input">
+            <label for="select-option" class="contacto__form-title"
+              >Selecciona una opción</label
+            >
+            <select name="" id="select-option">
+              <option value="">Dudas</option>
+              <option value="">Sugerencias</option>
+              <option value="">Otro</option>
+            </select>
+          </div>
+          <div class="contacto__form-input">
+            <label for="select-option" class="contacto__form-title"
+            >Descripción</label
+          >
+            <textarea
+            class="contacto__form-textarea"
+              cols="30"
+              rows="10"
+              placeholder="Ingresa texto"
+            ></textarea>
+          </div>      
+
+          <!-- BOTONES -->
+          <div class="contacto__form-button">
+          <button type="submit" class="contacto__form-button--send contacto-btn">Envíar información</button>
+          <button type="reset" class="contacto__form-button--reset contacto-btn">Limpiar formulario</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <section>
+        <div class="footer__content">
+          <ul class="footer__content-items">
+            <a href="./contacto.html" class="footer__content-link">
+              <li>Contacto</li>
+            </a>
+            <a href="./nosotros.html" class="footer__content-link">
+              <li>Sobre nosotros</li>
+            </a>
+          </ul>
+        </div>
+      </section>
+      <section class="footer__copy">
+        <small class="footer__copy-small">Info Music 2022</small>
+      </section>
+    </footer>
+  </body>
+</html>
