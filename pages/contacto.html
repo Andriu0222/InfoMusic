@@ -42,7 +42,7 @@
     <main class="contacto">
       <section class="contacto__content">
         <h2 class="contacto__content-title">
-          ¿Tienes dudas, sugerencias o nos quieres contar algo?
+          Cuentanos... 
         </h2>
         <form
           action="send.php"
@@ -50,36 +50,28 @@
           enctype="multipart/form-data"
           class="contacto__form"
         >
-          <div class="input-name contacto__form-input">
-            <label for="name" class="contacto__form-title">Nombre</label>
+          <div class="input-name contacto__form-input">        
             <input type="text" placeholder="Ingresa el nombre" id="name" />
           </div>
-          <div class="input-lastname contacto__form-input">
-            <label for="apellido" class="contacto__form-title">Apellido</label>
+          <div class="input-lastname contacto__form-input">           
             <input
               type="text"
               placeholder="Ingresa el apellido"
               id="apellido"
             />
           </div>
-          <div class="input-email contacto__form-input">
-            <label for="apellido" class="contacto__form-title">Email</label>
+          <div class="input-email contacto__form-input">           
             <input type="email" placeholder="Ingresa el email" id="apellido" />
           </div>
-          <div class="input-email contacto__form-input">
-            <label for="select-option" class="contacto__form-title"
-              >Selecciona una opción</label
-            >
+          <div class="input-select contacto__form-input">           
             <select name="" id="select-option">
+              <option value="Seleccione una opción" disabled selected>Seleccione una opción</option>
               <option value="">Dudas</option>
               <option value="">Sugerencias</option>
               <option value="">Otro</option>
             </select>
           </div>
-          <div class="contacto__form-input">
-            <label for="select-option" class="contacto__form-title"
-            >Descripción</label
-          >
+          <div class="contacto__form-input">           
             <textarea
             class="contacto__form-textarea"
               cols="30"
