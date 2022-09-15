@@ -1,0 +1,22 @@
+.body__nosotros {
+  background-color: #fff;
+}
+
+.nosotros {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  &__title {
+    margin-bottom: 40px;
+    font-size: 35px;
+    font-family: "Rubik", sans-serif;
+  }
+
+  &__content-about {
+    font-family: "Chakra Petch", sans-serif;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+}

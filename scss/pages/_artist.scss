@@ -1,0 +1,70 @@
+.body__artist {
+  background-color: #000;
+}
+
+.artist {
+  margin-bottom: 30px;
+  &__content-title {
+    h1 {
+      text-align: center;
+      font-family: "Carrois Gothic SC", sans-serif;
+      font-size: 80px;
+      color: #fff;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__content-list--art {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .article-thumb {
+      display: flex;
+      overflow: hidden;
+      .artist__content-list--imgartista {
+        width: 100%;
+        filter: grayscale(100%);
+        transition: filter 0.2s;
+        height: 377px;
+        max-width: 377px;
+      }
+    }
+
+    &:hover{
+        .artist__content-list--imgartista{
+            transform: scale(1.1);
+            transition: all 500ms ease;
+            filter: grayscale(0);
+        }
+    }
+  }
+
+  &__content-list--name {
+    font-family: "New Rocker", cursive;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  &__content-list--social {
+    ul {
+      display: flex;
+      list-style: none;
+      margin-top: 20px;
+
+      li {
+        margin: 0 20px;
+
+        a {
+          img {
+            width: 25px;
+          }
+        }
+      }
+    }
+  }
+}
