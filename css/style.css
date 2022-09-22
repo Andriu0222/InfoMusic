@@ -39,8 +39,8 @@ body {
     padding: 40px 60px; }
     .footer__content-items {
       display: flex;
-      list-style: none;
-      justify-content: space-between; }
+      justify-content: space-between;
+      list-style: none; }
     .footer__content-link {
       font-size: 20px;
       color: #f1f1f1;
@@ -61,7 +61,7 @@ body {
     text-align: center;
     font-family: "Carrois Gothic SC", sans-serif;
     font-size: 80px;
-    color: #fff;
+    color: #f1f1f1;
     letter-spacing: 3px;
     text-transform: uppercase; }
   .artist__content-list--art {
@@ -84,7 +84,7 @@ body {
       filter: grayscale(0); }
   .artist__content-list--name {
     font-family: "New Rocker", cursive;
-    color: #fff;
+    color: #f1f1f1;
     font-size: 30px;
     text-align: center;
     margin-top: 15px; }
@@ -106,16 +106,16 @@ body {
   .main__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     max-width: 1320px;
     margin: 0 auto;
-    gap: 20px;
     margin-top: 40px; }
     .main__content-card {
+      display: flex;
+      justify-content: center;
       border-radius: 10px;
       box-shadow: 0 25px 30px -12px rgba(0, 0, 0, 0.6);
-      position: relative;
-      display: flex;
-      justify-content: center; }
+      position: relative; }
     .main__content .card__header {
       height: 100%; }
     .main__content .card__link {
@@ -138,6 +138,7 @@ body {
 @media (max-width: 992px) {
   .main__content {
     max-width: 720px;
+    display: grid;
     grid-template-columns: repeat(2, 1fr); } }
 
 @media (max-width: 767px) {
@@ -243,13 +244,13 @@ body {
   grid-template-columns: repeat(2, 1fr); }
 
 .home__content-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   width: 100%;
   height: 100%;
   background-color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   top: 0%;
   animation-name: intro;
   animation-duration: 3s;
@@ -267,13 +268,13 @@ body {
   height: 100vh;
   width: 100%; }
   .home__content-div--link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     font-size: 20px;
     color: #f1f1f1;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100%;
     width: 100%;
     font-family: "Jost", sans-serif;
@@ -295,8 +296,8 @@ body {
   .artist__content__title {
     font-size: 50px; }
   .artist__content-list {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
     max-width: 800px; } }
 
 @media (max-width: 768px) {

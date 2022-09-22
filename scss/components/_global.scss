@@ -1,20 +1,38 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+.body__generos {
+  background-color: $colorSecundary;
+}
+
+body {
+  background-color: $colorPrimary;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+//MIXINS
+
+@mixin templateGrid($columns, $gap) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  @if ($gap == true) {
+    gap: 20px;
   }
-  
-  html {
-    height: 100%;
+}
+
+@mixin templateFlex($justify, $alignItems) {
+  display: flex;
+  justify-content: $justify;
+  @if ($alignItems == true) {
+    align-items: center;
   }
-  
-  .body__generos {
-    background-color: #f1f1f1;
-  }
-  
-  body {
-    background-color: #000;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
+}
