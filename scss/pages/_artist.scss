@@ -3,7 +3,7 @@
   &__content-title {
     h1 {
       text-align: center;
-      font-family: "Carrois Gothic SC", sans-serif;
+      font-family: $fontTitle;
       font-size: 80px;
       color: #5d131a;
       letter-spacing: 3px;
@@ -20,10 +20,11 @@
     .article-thumb {
       display: flex;
       overflow: hidden;
+
       .artist__content-list--imgartista {
         width: 100%;
         filter: grayscale(100%);
-        transition: filter 0.2s;
+        transition: filter 0.2s, transform .2s;
         height: 377px;
         max-width: 377px;
       }
@@ -50,14 +51,7 @@
     width: 250px;
     .artist__content-list--rrss {
       display: flex;
-      justify-content: space-evenly;
-
-      a{
-        i{
-          font-size: 30px;
-          color: #322d2d;
-        }
-      }
+      justify-content: space-evenly;     
     }
   }
 }

@@ -8,16 +8,21 @@
     padding: 40px 60px;
 
     &-items {
-      @include templateFlex(space-between, false);     
-      list-style: none;     
+      @include templateFlex(space-between, false);
+      list-style: none;
     }
 
     &-link {
       font-size: 20px;
       color: $colorSecundary;
       text-decoration: none;
-      font-family: "Jost", sans-serif;
+      font-family: "Carrois Gothic SC", sans-serif;
       text-transform: uppercase;
+      letter-spacing: 2px;
+      
+      &:hover {
+        color: $colorSecundary;
+      }
     }
   }
 

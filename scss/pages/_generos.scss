@@ -3,8 +3,9 @@
 
   &__title {
     text-align: center;
-    color: #2b2b2b;
-    font-family: "Rubik", sans-serif;
+    color: $colorTitle;
+    font-family: $fontTitle;
+    font-size: 60px
   }
 
   &__content {

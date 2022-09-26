@@ -30,6 +30,34 @@ body {
   display: flex;
   flex-direction: column; }
 
+.rs-spotify {
+  color: #322d2d;
+  font-size: 30px;
+  transition: all .2s; }
+  .rs-spotify:hover {
+    color: green; }
+
+.rs-twitter {
+  color: #322d2d;
+  font-size: 30px;
+  transition: all .2s; }
+  .rs-twitter:hover {
+    color: #55acee; }
+
+.rs-instagram {
+  color: #322d2d;
+  font-size: 30px;
+  transition: all .2s; }
+  .rs-instagram:hover {
+    color: #c92d8f; }
+
+.rs-facebook {
+  color: #322d2d;
+  font-size: 30px;
+  transition: all .2s; }
+  .rs-facebook:hover {
+    color: #2279e4; }
+
 .footer {
   background-color: #231f1f;
   width: 100%;
@@ -45,8 +73,11 @@ body {
       font-size: 20px;
       color: #f1f1f1;
       text-decoration: none;
-      font-family: "Jost", sans-serif;
-      text-transform: uppercase; }
+      font-family: "Carrois Gothic SC", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+      .footer__content-link:hover {
+        color: #f1f1f1; }
   .footer__copy {
     text-align: center; }
     .footer__copy-small {
@@ -72,7 +103,7 @@ body {
       .artist__content-list--art .article-thumb .artist__content-list--imgartista {
         width: 100%;
         filter: grayscale(100%);
-        transition: filter 0.2s;
+        transition: filter 0.2s, transform .2s;
         height: 377px;
         max-width: 377px; }
     .artist__content-list--art:hover .artist__content-list--imgartista {
@@ -90,16 +121,14 @@ body {
     .artist__content-list--social .artist__content-list--rrss {
       display: flex;
       justify-content: space-evenly; }
-      .artist__content-list--social .artist__content-list--rrss a i {
-        font-size: 30px;
-        color: #322d2d; }
 
 .main {
   margin-bottom: 40px; }
   .main__title {
     text-align: center;
-    color: #2b2b2b;
-    font-family: "Rubik", sans-serif; }
+    color: #5d131a;
+    font-family: "Carrois Gothic SC", sans-serif;
+    font-size: 60px; }
   .main__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -220,17 +249,20 @@ body {
   background-color: #fff; }
 
 .nosotros {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 15px; }
   .nosotros__title {
     margin-bottom: 40px;
-    font-size: 35px;
-    font-family: "Rubik", sans-serif; }
-  .nosotros__content-about {
+    font-size: 60px;
+    font-family: "Carrois Gothic SC", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #5d131a; }
+  .nosotros__content-text {
     font-family: "Chakra Petch", sans-serif;
-    color: black;
-    font-size: 20px;
+    color: #000;
+    font-size: 30px;
     margin-bottom: 40px; }
 
 .body__home .header {

@@ -3,20 +3,25 @@
 }
 
 .nosotros {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 15px;
 
   &__title {
     margin-bottom: 40px;
-    font-size: 35px;
-    font-family: "Rubik", sans-serif;
+    font-size: 60px;
+    font-family: $fontTitle;
+    text-transform: uppercase;
+    text-align: center;
+    color: $colorTitle;
   }
 
-  &__content-about {
-    font-family: "Chakra Petch", sans-serif;
-    color: black;
-    font-size: 20px;
-    margin-bottom: 40px;
+  &__content {
+    &-text {
+      font-family: "Chakra Petch", sans-serif;
+      color: #000;
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
   }
 }
