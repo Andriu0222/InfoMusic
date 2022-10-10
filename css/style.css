@@ -105,7 +105,8 @@ body {
         filter: grayscale(100%);
         transition: filter 0.2s, transform .2s;
         height: 377px;
-        max-width: 377px; }
+        max-width: 377px;
+        object-fit: cover; }
     .artist__content-list--art:hover .artist__content-list--imgartista {
       transform: scale(1.1);
       transition: all 500ms ease;
@@ -325,8 +326,6 @@ body {
   .artist__content__title {
     font-size: 50px; }
   .artist__content-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     max-width: 800px; } }
 
 @media (max-width: 768px) {
