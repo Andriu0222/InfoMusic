@@ -25,3 +25,20 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .nosotros {
+    max-width: 650px;
+    &__title {
+      font-size: 40px;
+    }
+
+    &__content {
+      text-align: justify;    
+      
+      &-text{
+        font-size: 25px;
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@
     text-align: center;
     color: $colorTitle;
     font-family: $fontTitle;
-    font-size: 60px
+    font-size: 60px;
   }
 
   &__content {
@@ -24,6 +24,26 @@
     .card {
       &__header {
         height: 100%;
+        position: relative;
+
+        &-name {
+          position: absolute;
+          background-color: #231f1f;
+          width: 50px;
+          text-align: center;
+          font-size: 25px;
+          opacity: 0;
+          width: 100%;
+          color: $colorSecundary;
+          font-family: "Carrois Gothic SC", sans-serif;
+          border-radius: 5px;
+          transition: opacity 0.4s;
+        }
+
+        &:hover .card__header-name {
+          opacity: 0.8;
+          transition: opacity 0.4s;
+        }
       }
 
       &__link {
@@ -57,6 +77,14 @@
   .main__content {
     max-width: 720px;
     @include templateGrid(2, null);
+
+    &-card {
+      .card__header {
+        &-name {
+          opacity: .8;
+        }
+      }
+    }
   }
 }
 
@@ -67,7 +95,12 @@
 }
 
 @media (max-width: 530px) {
+  .main__title {
+    font-size: 55px;
+  }
+
   .main__content {
     grid-template-columns: 1fr;
+    max-width: 300px;
   }
 }
